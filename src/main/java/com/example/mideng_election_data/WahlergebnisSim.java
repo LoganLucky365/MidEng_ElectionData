@@ -5,6 +5,7 @@ package com.example.mideng_election_data;
  * @author Sebastian Profous
  * @version 22-10-2024
  */
+
 public class WahlergebnisSim {
     private int regionID;
     private String regionName;
@@ -47,7 +48,6 @@ public class WahlergebnisSim {
     public String getZeitpunkt() {
         return zeitpunkt;
     }
-
     public WahlErgSim[] getWahlergebnisse() {
         return wahlergebnisse;
     }

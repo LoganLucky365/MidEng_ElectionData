@@ -7,7 +7,7 @@ package com.example.mideng_election_data;
  */
 public class WahlSimulator {
     public static WahlergebnisSim wahSimRechnen() {
-        WahlErgSim[] hilfeErstParteien = new WahlErgSim[6];
+        WahlErgSim[] hilfeErstParteien = new WahlErgSim[7];
         hilfeErstParteien[0] = new WahlErgSim((11111 + (int) (Math.random() * 1111111)),"ÖVP");
         hilfeErstParteien[1] = new WahlErgSim((11111 + (int) (Math.random() * 1111111)),"SPö");
         hilfeErstParteien[2] = new WahlErgSim((11111 + (int) (Math.random() * 1111111)),"FPÖ");
@@ -16,7 +16,7 @@ public class WahlSimulator {
         hilfeErstParteien[5] = new WahlErgSim((11111 + (int) (Math.random() * 1111111)),"ÖVP");
 
         VorzugsstimmenSim[][] hilfeVorzugStimmen = new VorzugsstimmenSim[6][2];
-        String[] nameListe = new String[11];
+        String[] nameListe = new String[12];
         nameListe[0] = "Werner Kogler";
         nameListe[1] = "Sebastain Kurz";
         nameListe[2] = "Rainer Zufall";
@@ -29,8 +29,7 @@ public class WahlSimulator {
         nameListe[9] = "ProofThatYouCanAchiveNothing";
         nameListe[10] = "IntelliJ";
         nameListe[11] = "FireFox";
-        int hilfeCounter = 0;
-        for(int i = 0; i <= 6; i++){
+        for(int i = 0; i < 6; i++){
             for(int i2 = 0; i2 < 2; i2++){
                 hilfeVorzugStimmen[i][i2] = new VorzugsstimmenSim((1 + (int) (Math.random() * 100)), nameListe[i], (100 + (int) (Math.random() * 100000)));
             }

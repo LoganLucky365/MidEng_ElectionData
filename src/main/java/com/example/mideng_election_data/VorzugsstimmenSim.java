@@ -14,4 +14,15 @@ public class VorzugsstimmenSim {
         this.listennummer = einLiNum;
         this.vorzugNamen = einVorZuNa;
     }
+    public int getListennummer() {
+        return listennummer;
+    }
+
+    public String getVorzugNamen() {
+        return vorzugNamen;
+    }
+
+    public int getAnzahlStimmen() {
+        return anzahlStimmen;
+    }
 }

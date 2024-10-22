@@ -24,4 +24,35 @@ public class WahlergebnisSim {
         this.vorzugsstimmen = einVorSim;
         this.wahlergebnisse = einWahler;
     }
+    public int getRegionID() {
+        return regionID;
+    }
+
+    public String getRegionName() {
+        return regionName;
+    }
+
+    public String getRegionAdresse() {
+        return regionAdresse;
+    }
+
+    public String getPostleitstelle() {
+        return postleitstelle;
+    }
+
+    public String getStaat() {
+        return staat;
+    }
+
+    public String getZeitpunkt() {
+        return zeitpunkt;
+    }
+
+    public WahlErgSim[] getWahlergebnisse() {
+        return wahlergebnisse;
+    }
+
+    public VorzugsstimmenSim[][] getVorzugsstimmen() {
+        return vorzugsstimmen;
+    }
 }

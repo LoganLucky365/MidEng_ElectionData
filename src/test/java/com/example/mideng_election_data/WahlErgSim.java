@@ -12,4 +12,7 @@ public class WahlErgSim {
         this.wahlErgStimmen = einWahlErgSti;
         this.parteiName = einPartNam;
     }
+    public String getParteiName() {
+        return this.parteiName;
+    }
 }

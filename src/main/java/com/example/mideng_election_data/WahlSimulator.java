@@ -31,7 +31,7 @@ public class WahlSimulator {
         nameListe[11] = "FireFox";
         for(int i = 0; i < 6; i++){
             for(int i2 = 0; i2 < 2; i2++){
-                hilfeVorzugStimmen[i][i2] = new VorzugsstimmenSim((1 + (int) (Math.random() * 100)), nameListe[i], (100 + (int) (Math.random() * 100000)));
+                hilfeVorzugStimmen[i][i2] = new VorzugsstimmenSim((1 + (int) (Math.random() * 100)), nameListe[i], (100 + (int) (Math.random() * 100000)), hilfeErstParteien[i].getParteiName());
             }
         }
 

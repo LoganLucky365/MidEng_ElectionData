@@ -9,10 +9,12 @@ public class VorzugsstimmenSim {
     private int listennummer;
     private String vorzugNamen;
     private int anzahlStimmen;
-    public VorzugsstimmenSim(int einLiNum, String einVorZuNa, int einAnzSti){
+    private String partei;
+    public VorzugsstimmenSim(int einLiNum, String einVorZuNa, int einAnzSti, String einPartei){
         this.anzahlStimmen = einAnzSti;
         this.listennummer = einLiNum;
         this.vorzugNamen = einVorZuNa;
+        this.partei = einPartei;
     }
     public int getListennummer() {
         return listennummer;
@@ -24,5 +26,9 @@ public class VorzugsstimmenSim {
 
     public int getAnzahlStimmen() {
         return anzahlStimmen;
+    }
+
+    public String getPartei() {
+        return partei;
     }
 }

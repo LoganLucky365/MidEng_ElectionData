@@ -6,7 +6,7 @@ package com.example.mideng_election_data;
  * @version 22-10-2024
  */
 public class WahlSimulator {
-    public WahlergebnisSim wahSimRechnen() {
+    public static WahlergebnisSim wahSimRechnen() {
         WahlErgSim[] hilfeErstParteien = new WahlErgSim[6];
         hilfeErstParteien[0] = new WahlErgSim((11111 + (int) (Math.random() * 1111111)),"ÖVP");
         hilfeErstParteien[1] = new WahlErgSim((11111 + (int) (Math.random() * 1111111)),"SPö");
